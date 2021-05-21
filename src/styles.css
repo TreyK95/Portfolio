@@ -4,7 +4,6 @@ body {
 
 section {
   background-color: white;
-  border: solid black 1px;
 }
 .hero {
   background-color: #1c1d25;
@@ -42,6 +41,10 @@ p {
   margin: 0;
   font-size: 30px;
   font-weight: 100;
+}
+.subtext {
+  font-size: 50px;
+  font-weight: 300;
 }
 .hero-area {
   display: flex;
@@ -92,6 +95,12 @@ p {
   justify-content: space-around;
   padding: 80px;
 }
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
 
 .headshot {
   width: 250px;
@@ -101,4 +110,23 @@ p {
 .headshot-container {
   display: flex;
   align-items: center;
+}
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px darkgrey;
+  margin: 10px;
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+.projext-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
 }
