@@ -25,7 +25,7 @@ h3 {
 }
 
 label {
-  font-size: 0.85em;
+  font-size: 15pt;
   margin-left: 12px;
   color: white;
 }
@@ -51,6 +51,7 @@ textarea:focus {
 
 input[type="submit"] {
   background: #0d19a3;
+  font-size: 15pt;
   margin: 0 auto;
   outline: 0;
   color: white;
@@ -69,7 +70,8 @@ input[type="submit"]:focus {
 }
 
 input[type="submit"]:hover {
-  background: #2196f3;
+  background: #4285f4;
+  cursor: pointer;
 }
 
 .center {
