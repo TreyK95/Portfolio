@@ -7,13 +7,13 @@ section {
   background-color: white;
 }
 .hero {
-  background-color: #1c1d25;
+  background-color: #0b0c10;
   height: 100vh;
   font-size: 40px;
   color: white;
 }
 footer {
-  background-color: black;
+  background-color: #0b0c10;
   color: white;
   text-align: center;
   padding: 80px;
@@ -63,7 +63,7 @@ p {
 .button {
   width: 200px;
   height: 55px;
-  background-color: coral;
+  background-color: #0d19a3;
   border-radius: 30px;
   text-align: center;
   font-size: 30px;
@@ -74,12 +74,24 @@ p {
 }
 
 .button:hover {
-  background-color: #ef744b;
+  background-color: #4285f4;
 }
 
 .button:active {
-  background-color: #a9a9a9;
-  color: #808080;
+  background-color: #3500d3;
+  color: #3500d3;
+}
+.contact-button {
+  width: 220px;
+  height: 60px;
+  background-color: #0d19a3;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 .socials {
   padding-bottom: 200px;
@@ -126,12 +138,6 @@ p {
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 .project-image {
   margin-top: 25px;
   width: 250px;
@@ -144,7 +150,7 @@ hr {
 
 .project-link {
   text-decoration: none;
-  color: #ef744b;
+  color: #0d19a3;
 }
 a {
   text-decoration: none;
@@ -170,18 +176,25 @@ a {
   }
   ul {
     display: none;
-    background-color: #2b2c38;
+    background-color: #0d19a3;
     margin: 0px;
   }
   nav {
     display: flex;
     flex-direction: column-reverse;
-    background-color: #2b2c38;
+    background-color: #0d19a3;
   }
   ul.show {
     display: block;
   }
   .logo {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
