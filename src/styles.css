@@ -38,8 +38,13 @@ h1 {
   font-size: 90px;
   margin: 0;
 }
+h3 {
+  font-size: 15pt;
+  font-weight: 100;
+}
 h2 {
   font-size: 50px;
+  margin: 0;
 }
 p {
   margin: 0;
@@ -82,16 +87,18 @@ p {
   color: #3500d3;
 }
 .contact-button {
-  width: 220px;
-  height: 60px;
+  width: 200px;
+  height: 55px;
   background-color: #0d19a3;
   border-radius: 30px;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 20px;
-  padding-bottom: 10px;
+  margin: 0 auto;
+  display: block;
 }
 .socials {
   padding-bottom: 200px;

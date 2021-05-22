@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400;600;700;800&family=Concert+One&family=Press+Start+2P&display=swap');
+      </style>
   </head>
   <body>
+    <div>
     <form action="https://formsubmit.co/kemptrey@outlook.com" method="POST">
       <input type="hidden" name="_captcha" value="false" />
-      <input type="email" name="email" placeholder="Email Address" />
+      <!-- <input type="email" name="email" placeholder="Email Address" /> -->
       <input type="hidden" name="_subject" value="New Email!" />
-      <input
-        type="hidden"
-        name="_next"
-        value="https://treykemp.com/thankyou.html"
-      />
-      <input
-        type="text"
-        name="name"
-        placeholder="Please Enter Your Name"
-        required
-      />
-      <input
-        type="text"
-        name="message"
-        placeholder="Write your message here..."
-        required
-      />
-      <button type="submit">Send</button>
-    </form>
+      <form action="#" name="contact_form">
+        <label for='Name:'>Name</label>
+        <input name='name' type="text" required placeholder="Please Enter Name"/>
+        <br>
+        <label for="Email:">Email</label>
+        <input name="email" type="email" required placeholder="Please Enter Email" required />
+        <br>
+        <label for="message">Message</label><br>
+        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+        <div class="center">
+          <input type="submit" value="Submit">
+        </div>
+      </form>	
+  </div>
   </body>
 </html>
