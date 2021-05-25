@@ -100,6 +100,14 @@ p {
   margin: 0 auto;
   display: block;
 }
+.contact-button:hover {
+  background-color: #4285f4;
+}
+
+.contact-button:active {
+  background-color: #3500d3;
+  color: #3500d3;
+}
 .socials {
   padding-bottom: 200px;
 }

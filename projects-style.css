@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap");
+.btn {
+  width: 200px;
+  height: 55px;
+  background-color: #0d19a3;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin: 0 auto;
+  display: block;
+  color: white !important;
+}
+.btn:hover {
+  background-color: #4285f4;
+}
+
+.btn:active {
+  background-color: #3500d3;
+  color: #3500d3;
+}
 body {
   padding: 0px;
   font-family: Changa;
@@ -59,26 +83,19 @@ h2 {
 
 .location-listing:hover .location-title {
   opacity: 1;
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .location-listing:hover .location-image img {
   filter: blur(2px);
-}
-.btn {
-  width: 200px;
-  height: 55px;
-  background-color: #0d19a3;
-  border-radius: 30px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 300;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 20px;
-  margin: 0 auto;
-  display: block;
-  font-family: Changa;
-  color: white;
 }
 
 /* for touch screen devices */
