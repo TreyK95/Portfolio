@@ -1,86 +1,92 @@
 body {
-  margin: 0;
-  font-family: Changa, sans-serif;
+  padding: 0px;
+  font-family: Changa;
+  background: #0b0c10;
+  height: 100vh;
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.container {
-  width: 20%;
-  position: relative;
-  transition: transform 500ms;
-  display: block;
-}
-.container img {
-  width: 100%;
-  opacity: 1;
+img {
+  width: 100%; /* need to overwrite inline dimensions */
   height: auto;
-  display: block;
 }
-.row .container:focus,
-.row .container:hover {
-  transform: scale(1.5);
-  z-index: 1;
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: white;
+  font-size: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
 }
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+/* hover styles */
+.location-listing {
+  position: relative;
 }
-.container:hover .middle {
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(13, 25, 163, 0.4);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
   opacity: 1;
 }
-.text {
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+.btn {
+  width: 200px;
+  height: 55px;
+  background-color: #0d19a3;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin: 0 auto;
+  display: block;
+  font-family: Changa;
   color: white;
-  font-size: 16pt;
-  padding: 16px 32px;
 }
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
-  width: 100%;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-@media only screen and (max-width: 1500px) {
-  .text {
-    font-size: 10px;
-    padding: 32px 16px;
+
+/* for touch screen devices */
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .extra-item {
-    display: none;
-  }
-  .container {
-    width: 100%;
-  }
-  .row .container:focus,
-  .row .container:hover {
-    transform: none;
-    z-index: 1;
-  }
-  .footer {
-    position: relative;
-  }
-  .text {
-    font-size: 32px;
-    padding: 32px 16px;
+  .location-image img {
+    filter: blur(0px);
   }
 }
