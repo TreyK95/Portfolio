@@ -1,27 +1,23 @@
 body {
-  margin: 1rem;
+  margin: 0;
   font-family: Changa, sans-serif;
 }
 
 .row {
-  display: inline-grid;
+  display: flex;
   flex-wrap: wrap;
 }
 .container {
   width: 20%;
   position: relative;
   transition: transform 500ms;
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, min max(min-content, 1fr));
+  display: block;
 }
 .container img {
   width: 100%;
   opacity: 1;
   height: auto;
-  display: grid;
-  min-width: 10px;
+  display: block;
 }
 .row .container:focus,
 .row .container:hover {
