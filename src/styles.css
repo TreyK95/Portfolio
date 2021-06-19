@@ -1,6 +1,7 @@
 body {
   font-family: "Changa", sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -30,6 +31,33 @@ ul {
   font-size: 30px;
 }
 
+.typing {
+  animation: typing 3.5s steps(22, end), blink 1s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: Changa;
+  letter-spacing: 0.8rem;
+  margin: 0 auto;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: #0d19a3;
+  }
+  50% {
+    border: blue;
+  }
+}
 li {
   /* width: 200px; */
   text-decoration: none;
@@ -54,6 +82,7 @@ p {
 .subtext {
   font-size: 15px;
   font-weight: 300;
+  margin: 1rem;
 }
 .hero-area {
   display: flex;

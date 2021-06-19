@@ -5,7 +5,27 @@
 *:focus {
   outline: 0;
 }
-
+.section-heading {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 10rem;
+  border-bottom: 0.3rem solid #333;
+  text-shadow: 0.2rem 0.2rem 0.5rem #555;
+  font-family: Changa, sans-serif;
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Changa, sans-serif;
+}
 body {
   font-family: "Changa", sans-serif;
   background: #0b0c10;
@@ -76,4 +96,31 @@ input[type="submit"]:hover {
 
 .center {
   text-align: center;
+}
+.contact-form {
+  width: 50rem;
+  flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+
+  margin: 0.5rem 0;
+  background-color: #eef;
+  font-size: 1.5rem;
+  border: 0.2rem solid #e41c6f;
+  color: #555;
+}
+.contact-form textarea {
+  height: 10rem;
+  max-height: 15rem;
+  max-width: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
