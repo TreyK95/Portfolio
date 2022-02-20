@@ -127,16 +127,6 @@ html {
 .project:hover .project1-img {
   opacity: 0.2;
 }
-
-.project2-img {
-  width: 40rem;
-  height: 22.7rem;
-  transition: opacity 0.3s;
-}
-
-.project:hover .project2-img {
-  opacity: 0.2;
-}
 @media (max-width: 1200px) {
   .services {
     height: auto;
