@@ -8,7 +8,6 @@
   list-style-type: none;
   font-family: Changa, sans-serif;
   font-weight: 400;
-  
 }
 
 html {
@@ -53,6 +52,7 @@ html {
   flex-wrap: wrap;
   display: flex;
 }
+
 .project {
   display: flex;
   flex-direction: column;
@@ -65,6 +65,7 @@ html {
   overflow: hidden;
   transition: box-shadow 0.5s;
 }
+
 .project:hover {
   box-shadow: 1rem 1rem 1rem #777;
 }
@@ -115,6 +116,26 @@ html {
 .project:hover .project-link {
   bottom: 5rem;
   transition: bottom 0.3s 0.3s;
+}
+
+.project1-img {
+  width: 40rem;
+  height: 22.7rem;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project1-img {
+  opacity: 0.2;
+}
+
+.project2-img {
+  width: 40rem;
+  height: 22.7rem;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project2-img {
+  opacity: 0.2;
 }
 @media (max-width: 1200px) {
   .services {
